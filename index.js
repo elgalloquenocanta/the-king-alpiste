@@ -1,4 +1,4 @@
-scconst express = require('express');
+const express = require('express');
 const app = express();
 const port = 3000;
 
@@ -103,19 +103,8 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.startsWith("g!discord.js")){
-    const embed = new Discord.MessageEmbed()
-    .setTitle("The King Alpiste g!")
-    .setDescription("BOT OFICIAL DE EL GALLO QUE NO CANTA")
-    .setThumbanil("https://discordapp.com/channels/718464829014147155/719819464723398756/742538675681755146")
-    .addField("Version", "1.0.0")
-    .addField("GitHub", "1.0.0")
-    .addField("Version", "1.0.0")
-    .addField("Version", "1.0.0")
-
-
-
-    msg.reply('¡Que bien bailas!, https://tenor.com/view/cookie-monster-kooky-silly-cute-happy-gif-11561007');
+  if (msg.content ==='g!discord.js') {
+    msg.reply('El Bot es de la Versión 1.0.0, con repositorio en GitHub con enlace: https://github.com/elgalloquenocanta/the-king-alpiste');
   }
 });
 
