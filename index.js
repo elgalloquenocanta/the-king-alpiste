@@ -10,16 +10,6 @@ app.listen(port, () => console.log(`Example app listening at http://localhost:${
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-function presence() {
-  client.user.setPresence({
-    status: "online",
-    activity: {
-      name: "Jugando a g!",
-      type: "WATCHING"
-    }
-  });
-}
-
 client.on('ready', () => {
   console.log(`Logueado como ${client.user.tag}!`);
 });
